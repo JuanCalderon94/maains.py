@@ -6,10 +6,10 @@ app = Flask(__name__)
 CORS(app)
 
 pusher_client = pusher.Pusher(
-  app_id='2064483',
-  key='ebff80d16de6cdb1443e',
-  secret='b1ae5b9b7f6a2365b73c',
-  cluster='us2',
+  app_id = "2068346",
+  key = "5398827de005ac67b6b2",
+  secret = "342442a921382d60170b",
+  cluster = "us2",
   ssl=True
 )
 
@@ -23,3 +23,4 @@ def send_message():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
