@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import pusher
 
-app = Flask(_name_)
+app = Flask(__name__)
 CORS(app)
 
 pusher_client = pusher.Pusher(
@@ -28,5 +28,5 @@ def send_message():
     
     return jsonify({'status': 'success'})
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     app.run(debug=True)
